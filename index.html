@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1b110b">
+  <title>Three Months Until the Bells Ring | Brendan &amp; Linley</title>
+  <meta name="description" content="A riddle from Brendan and Linley—fifteen clues before the bells ring.">
+  <meta property="og:title" content="Three Months Until the Bells Ring">
+  <meta property="og:description" content="A riddle from Brendan & Linley. Follow the clues, then stake your claim.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://brenley2022.github.io/wedding-quiz-clues/">
+  <meta property="og:image" content="https://brenley2022.github.io/wedding-quiz-clues/social-envelope-preview.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+  <style>
+    :root{--ivory:#f7f0e6;--paper:#fffaf1;--gold:#c9a665;--deep-gold:#9d7437;--ink:#282018;--muted:#75695d;--wood:#1b110b}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;background:var(--wood)}
+    body{margin:0;color:var(--ink);font-family:Inter,Arial,sans-serif;background:var(--wood);overflow-x:hidden}
+    .progress{position:fixed;z-index:50;left:0;top:0;height:3px;width:0;background:linear-gradient(90deg,#a97b37,#f1d89c);box-shadow:0 0 14px rgba(239,207,139,.8)}
+    .hero{position:relative;min-height:100svh;display:grid;place-items:center;padding:56px 22px 66px;overflow:hidden;text-align:center;color:#fff;background:linear-gradient(rgba(23,13,7,.3),rgba(23,13,7,.72)),url('invitation-backdrop.png') center/cover no-repeat}
+    .hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 32%,transparent 0 15%,rgba(18,10,5,.18) 60%,rgba(14,8,4,.54) 100%)}
+    .hero:after{content:"";position:absolute;inset:18px;border:1px solid rgba(224,190,121,.62);pointer-events:none}
+    .hero-inner{position:relative;z-index:2;width:min(780px,100%);animation:arrive 1.4s cubic-bezier(.2,.75,.2,1) both}
+    .monogram{display:inline-grid;place-items:center;width:92px;height:92px;margin-bottom:24px;border:1px solid rgba(239,211,155,.7);border-radius:50%;color:#e8cd95;background:rgba(46,25,13,.28);backdrop-filter:blur(8px);font:500 31px/1 "Cormorant Garamond",serif;letter-spacing:.16em;box-shadow:0 16px 45px rgba(0,0,0,.28)}
+    .kicker{margin:0 0 18px;color:#e1c27e;font-size:12px;font-weight:600;letter-spacing:.34em;text-transform:uppercase}
+    h1{margin:0;font:500 clamp(52px,11vw,94px)/.9 "Cormorant Garamond",serif;text-wrap:balance;text-shadow:0 8px 34px rgba(0,0,0,.58)}
+    .hero-rule{display:flex;align-items:center;justify-content:center;gap:14px;margin:28px auto;width:min(330px,76%);color:#e0bd73}
+    .hero-rule:before,.hero-rule:after{content:"";height:1px;flex:1;background:linear-gradient(90deg,transparent,#d9b66f)}
+    .hero-rule:after{background:linear-gradient(90deg,#d9b66f,transparent)}
+    .hero-rule span{font:400 34px/1 Parisienne,cursive}
+    .lead{max-width:640px;margin:0 auto;font:400 clamp(23px,4.8vw,31px)/1.42 "Cormorant Garamond",serif;color:#fff8ec;text-wrap:balance}
+    .scroll-cue{position:absolute;z-index:2;bottom:30px;left:50%;transform:translateX(-50%);color:#e4c98f;font-size:10px;letter-spacing:.28em;text-transform:uppercase}
+    .scroll-cue:after{content:"";display:block;width:1px;height:24px;margin:10px auto 0;background:linear-gradient(#e4c98f,transparent);animation:drift 1.8s ease-in-out infinite}
+    main{position:relative;padding:70px 16px 100px;background:linear-gradient(rgba(247,240,230,.94),rgba(247,240,230,.98)),url('invitation-backdrop.png') center/cover fixed no-repeat}
+    main:before{content:"";position:absolute;inset:0;opacity:.34;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.74' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.08'/%3E%3C/svg%3E")}
+    .story{position:relative;width:min(780px,100%);margin:0 auto}
+    .opening{text-align:center;margin:0 auto 70px;padding:0 8px}
+    .opening .eyebrow,.finale .eyebrow{margin:0 0 14px;color:var(--deep-gold);font-size:11px;font-weight:600;letter-spacing:.3em;text-transform:uppercase}
+    .opening p{margin:0 0 25px;font:500 clamp(25px,5.1vw,34px)/1.35 "Cormorant Garamond",serif;text-wrap:balance}
+    .opening .instruction{color:var(--muted);font-size:clamp(22px,4.4vw,29px);font-style:italic}
+    .clue{position:relative;margin:0 0 24px;padding:34px clamp(23px,6vw,46px);border:1px solid rgba(158,116,55,.22);border-radius:4px;background:linear-gradient(145deg,rgba(255,251,244,.97),rgba(242,229,210,.94));box-shadow:0 20px 54px rgba(60,39,20,.10),inset 0 0 0 5px rgba(255,255,255,.26);opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.75,.25,1)}
+    .clue:before{content:"";position:absolute;left:50%;top:-1px;width:76px;height:2px;transform:translateX(-50%);background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+    .clue.visible{opacity:1;transform:none}
+    .clue p{margin:0 0 8px;text-align:center;font:400 clamp(22px,4.3vw,28px)/1.5 "Cormorant Garamond",serif;text-wrap:balance}
+    .clue p:last-child{margin-bottom:0}
+    .ornament{display:grid;place-items:center;margin:18px auto 42px;color:var(--gold);font:400 28px/1 Parisienne,cursive}
+    .ornament:before,.ornament:after{content:"";display:block;width:1px;height:24px;margin:6px 0;background:linear-gradient(transparent,var(--gold))}
+    .ornament:after{background:linear-gradient(var(--gold),transparent)}
+    .finale{position:relative;margin-top:54px;padding:52px clamp(24px,7vw,62px);border:1px solid rgba(216,181,110,.58);text-align:center;color:#fff8e9;background:linear-gradient(145deg,rgba(35,21,12,.96),rgba(17,13,10,.98));box-shadow:0 28px 70px rgba(33,21,11,.25)}
+    .finale:before{content:"";position:absolute;inset:10px;border:1px solid rgba(216,181,110,.2);pointer-events:none}
+    .finale .eyebrow{color:#dfbe79}
+    .finale p{position:relative;margin:0 0 18px;font:400 clamp(23px,4.7vw,30px)/1.48 "Cormorant Garamond",serif;text-wrap:balance}
+    .finale .signoff{margin:30px 0 0;color:#dfbe79;font:400 44px/1 Parisienne,cursive}
+    .quiz-button{position:relative;display:block;width:min(430px,100%);margin:38px auto 0;padding:18px 22px;border:1px solid #f0d89f;border-radius:999px;color:#21170d;text-decoration:none;text-transform:uppercase;letter-spacing:.16em;font-size:13px;font-weight:700;background:linear-gradient(180deg,#e7cd91,#c39a4d);box-shadow:0 16px 40px rgba(0,0,0,.34),inset 0 1px rgba(255,255,255,.6);transition:transform .25s ease,filter .25s ease}
+    .quiz-button:hover{transform:translateY(-2px);filter:brightness(1.06)}
+    .quiz-button:active{transform:translateY(1px)}
+    .site-address{position:relative;margin-top:16px!important;color:rgba(255,248,233,.62);font:500 11px/1.4 Inter,sans-serif!important;letter-spacing:.14em;text-transform:uppercase}
+    footer{padding:32px 18px;text-align:center;color:rgba(255,255,255,.62);background:#120c08;font-size:11px;letter-spacing:.18em;text-transform:uppercase}
+    @keyframes arrive{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+    @keyframes drift{0%,100%{opacity:.25;transform:scaleY(.65)}50%{opacity:1;transform:scaleY(1)}}
+    @media(max-width:600px){.hero{padding-inline:25px}.hero:after{inset:10px}.monogram{width:78px;height:78px;font-size:27px}.opening{margin-bottom:54px}.clue{padding-block:29px}.ornament{margin-bottom:32px}.finale{margin-inline:-4px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero-inner,.scroll-cue:after{animation:none}.clue{opacity:1;transform:none;transition:none}}
+  </style>
+</head>
+<body>
+  <div class="progress" aria-hidden="true"></div>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="monogram" aria-label="Brendan and Linley">B&nbsp;|&nbsp;L</div>
+      <p class="kicker">A riddle from our story</p>
+      <h1>Three Months Until<br>the Bells Ring</h1>
+      <div class="hero-rule"><span>&amp;</span></div>
+      <p class="lead">Fifteen secrets are waiting. How much you uncover depends on what you know.</p>
+    </div>
+    <div class="scroll-cue">Begin the story</div>
+  </header>
+
+  <main>
+    <div class="story">
+      <section class="opening">
+        <p class="eyebrow">In true Linley &amp; Brendan style</p>
+        <p>How could we throw a party without a quiz worthwhile?<br>On our wedding website, you can stake your claim,<br>If you think our minds work one and the same.</p>
+        <p>We know this quiz may be tricky for some,<br>So cryptic clues to your rescue now have to come.</p>
+        <p>Three months remain until vows are spoken,<br>But first comes a challenge, fifteen secrets unbroken.<br>Our story is hidden in the verses below,<br>How much you uncover depends what you know.</p>
+        <p class="instruction">Think sideways, read carefully and follow each thread,<br>The answers are hidden in the story ahead.</p>
+      </section>
+
+      <section class="clue"><p>Our beginning was delayed before it could begin,</p><p>His name belonged to the silver screen, where a licence was his thing.</p><p>A familiar name had Brendan talking while Linley ran late,</p><p>A famous connection, perhaps, but not the man on our first date.</p></section>
+      <div class="ornament">♡</div>
+
+      <section class="clue"><p>Then came conversation, laughter and caffeine,</p><p>At a place where sitting on the fence would never be seen.</p><p>Its name belongs to one committed to a side,</p><p>A loyal supporter with allegiance and pride.</p></section>
+      <div class="ornament">♡</div>
+
+      <section class="clue"><p>Our story soon rose far above the road,</p><p>Carrying one nervous man and a carefully hidden load.</p><p>We landed where grain once turned beside waters flowing free,</p><p>And one question changed the course of what our future came to be.</p></section>
+      <div class="ornament">♡</div>
+
+      <section class="clue"><p>In our home normal rules sometimes disappear,</p><p>And one particular feature still causes raised eyebrows here.</p><p>The third porcelain throne sits where no guest would assume,</p><p>This place ruled by mise en place, sharp steel and perfume.</p></section>
+      <div class="ornament">♡</div>
+
+      <section class="clue"><p>Then foreign skies called the three of us away,</p><p>To a city where history once changed its name.</p><p>Since the guns had fallen still, a new chapter took its place,</p><p>Golden years later its people still filled every space.</p><p>Flags lined the streets as fire painted the night,</p><p>A milestone remembered in colour and light.</p></section>
+      <div class="ornament">♡</div>
+
+      <section class="clue"><p>Across another ocean, where neon never sleeps,</p><p>A city in the sand where every secret keeps.</p><p>Dressed naturally in pink, balanced elegantly just so,</p><p>A curious choice of name beneath the desert glow.</p><p>Among the cards and lights, we found our place to stay,</p><p>Its colourful namesake standing tall gave just enough away.</p></section>
+      <div class="ornament">♡</div>
+
+      <section class="clue"><p>Along the way, small habits began to appear,</p><p>Some charming, some puzzling, but all now held dear.</p><p>When Linley reaches for sweets, old Noah’s rule must apply.</p><p>Though why that ancient custom matters, only Linley knows why.</p></section>
+      <div class="ornament">♡</div>
+
+      <section class="clue"><p>Hong Kong gave us skylines, markets and remarkable views,</p><p>And one shared experience none of us would choose.</p><p>Three travellers united by a souvenir unseen,</p><p>A rebellion from within that turned us slightly mean.</p><p>No postcard or trinket came close to this affair,</p><p>Whatever found one of us soon found all three there.</p></section>
+      <div class="ornament">♡</div>
+
+      <section class="clue"><p>Before our family joined and two became three,</p><p>Brendan guarded the moment with patient secrecy.</p><p>Nature’s familiar count would still fall one page short.</p><p>One further turn of the calendar completes the report.</p></section>
+      <div class="ornament">♡</div>
+
+      <section class="clue"><p>A playful little journey that ended less than sweet,</p><p>When eight little circles making their way towards defeat.</p><p>But somewhere along the way, balance lost its charm,</p><p>And the night rolled to an ending remembered by one arm.</p></section>
+      <div class="ornament">♡</div>
+
+      <section class="clue"><p>Later came a birthday and a spotted surprise,</p><p>How could i have known she’d be the devil in disguise.</p><p>One of his three numbers would mark Aubrey’s demise,</p><p>When Luna chose our family, with hatred in her eyes.</p></section>
+      <div class="ornament">♡</div>
+
+      <section class="clue"><p>Some traditions return when the seasons align,</p><p>Queues by design and a crown with no throne,</p><p>A yearly Perth pilgrimage our family calls its own.</p><p>Through crowds and commotion, we follow the flow,</p><p>Returning each year to the place we all know.</p></section>
+      <div class="ornament">♡</div>
+
+      <section class="clue"><p>Our sporting loyalties divide the turning of each year.</p><p>One thrives when summer’s furnace makes the boundaries sear.</p><p>The other belongs to winter, where a mooring holds its place,</p><p>Two Western names our family proudly choose to embrace.</p></section>
+      <div class="ornament">♡</div>
+
+      <section class="clue"><p>Then comes the time Brendan waits for all year,</p><p>When Bing dreams in white and Bublé reappears.</p><p>Three weary travellers still follow a light from afar,</p><p>And Mariah wants just one thing, wherever you are.</p></section>
+      <div class="ornament">♡</div>
+
+      <section class="clue"><p>One final name completes our unusual family tree,</p><p>Hidden within the troubled history of hip-hop royalty.</p><p>Five dimes placed her after love where there was no loyalty,</p><p>A name once carried through a tale of fractured fidelity.</p><p>Not born to us, yet claimed as family all the same,</p><p>Follow the lyrical trail and you may uncover her name.</p></section>
+
+      <section class="finale">
+        <p class="eyebrow">The final test</p>
+        <p>These verses hold the clues, though none will plainly confess;<br>Some will lead you closer, while others just create a mess.<br>Fifteen answers await, followed by one final test.<br>Your best—or worst—marriage advice to decide who knows us best.</p>
+        <p>Follow the clues and see where they lead,<br>Some hide in the words, some between what you read.<br>But answers aside, there’s one thing left to do—<br>We cannot wait to celebrate this day with you,<br>Above the Swan, with the city in view,<br>As the bells ring out and we finally say “I do.”</p>
+        <p class="signoff">L &amp; B</p>
+        <a class="quiz-button" href="https://thepricewedding.life/">Enter the Wedding Website</a>
+        <p class="site-address">thepricewedding.life</p>
+      </section>
+    </div>
+  </main>
+  <footer>Brendan &amp; Linley · 13 March 2027</footer>
+
+  <script>
+    const cards=[...document.querySelectorAll('.clue')];
+    if('IntersectionObserver' in window){
+      const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12,rootMargin:'0px 0px -8%'});
+      cards.forEach(card=>observer.observe(card));
+    }else{cards.forEach(card=>card.classList.add('visible'))}
+    const progress=document.querySelector('.progress');
+    function updateProgress(){const maximum=document.documentElement.scrollHeight-innerHeight;progress.style.width=(maximum>0?scrollY/maximum*100:0)+'%'}
+    addEventListener('scroll',updateProgress,{passive:true});updateProgress();
+  </script>
+</body>
+</html>
